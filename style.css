@@ -701,6 +701,28 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
             .input-container.focus label { top: 0; transform: translateY(-50%); left: 25px; font-size: var(--smaller-font-size); }
                 .input-container.focus span::before, .input-container.focus span::after  { width: 50%; opacity: 1; }
 
+/* Map */
+
+.contact-map {
+    margin-top: 3rem;
+    border-radius: .75rem;
+    overflow: hidden;
+    border: 2px solid var(--box-color);
+    box-shadow: 0 4px 20px hsla(242, 19%, 5%, 0.3);
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    border-radius: .75rem;
+    filter: grayscale(20%) contrast(1.05);
+    transition: filter .3s;
+}
+
+.contact-map:hover iframe { filter: grayscale(0%) contrast(1); }
+
+body.light-mode .contact-map { border-color: hsl(220, 12%, 82%); }
+
 /* Footer */
 
 .footer { padding-top: 2rem; }
