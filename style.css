@@ -87,9 +87,9 @@ body.light-mode .sidebar {
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body, button, input { font-family: var(--body-font); font-size: var(--normal-font-size); }
-    body { background-color: var(--body-color); color: var(--text-color); }
+    body { background-color: var(--body-color); color: var(--text-color); overflow-x: hidden; }
 h1, h2, h3 { color: var(--title-color); font-weight: var(--font-bold); }
 ul { list-style: none; }
 a { text-decoration: none; }
@@ -818,7 +818,7 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
     .main { margin-left: 0; }
 
     .about-container { grid-template-columns: 1fr; row-gap: 2.5rem; }
-    .about-img { width: 350px; }
+    .about-img { width: 100%; max-width: 350px; }
     .about-data { text-align: center; }
     .about-info { justify-content: center; }
     .about-box { padding: 0.75rem .5rem; }
@@ -850,22 +850,28 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
     .portfolio-item-details { margin-bottom: var(--mb15); }
     .details-info li { margin-bottom: var(--mb05); }
     .details-title { margin-bottom: var(--mb075); }
+
+    /* Prevent theme toggle from overlapping nav-toggle on tablets */
+    .theme-toggle { right: 4.5rem; }
 }
 
 @media screen and (max-width: 768px) {
     .about-img { width: 250px; }
-    .qualification-container { grid-template-columns: 290px; row-gap: 3rem; }
-    .skills-container { grid-template-columns: 300px; row-gap: 3rem; }
-    .work-container { grid-template-columns: 330px; }
+    .qualification-container { grid-template-columns: 1fr; row-gap: 3rem; }
+    .skills-container { grid-template-columns: 1fr; row-gap: 3rem; }
+    .work-container { grid-template-columns: repeat(2, 1fr); }
 
     .services-container { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     .services-content { padding: 3.5rem .5rem 1.25rem 1.5rem; }
     .services-icon { font-size: 1.5rem; }
+    /* Fix services modal width so it doesn't overflow phone screens */
+    .services-modal-content { width: min(500px, calc(100vw - 2rem)); }
 
     .client-card { min-width: 130px; }
     .client-logo { width: 70px; height: 70px; }
 
-    .contact-container { grid-template-columns: 360px; row-gap: 3rem; }
+    /* Contact: single fluid column instead of fixed 360px */
+    .contact-container { grid-template-columns: 1fr; row-gap: 3rem; }
     
     .footer-container { 
         grid-template-columns: repeat(2, 1fr); 
@@ -878,30 +884,45 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
     .footer-bg { padding: 2rem 0 1.5rem; }
     .footer-copy { padding-top: 1.5rem; }
 
-    .portfolio-popup-inner { width: 420px; padding: 2.8rem 1.5rem 2.5rem; }
+    /* Fix portfolio popup width for tablets/phones */
+    .portfolio-popup-inner { width: min(420px, calc(100vw - 2rem)); padding: 2.8rem 1.5rem 2.5rem; }
     .portfolio-popup-content { grid-template-columns: 1fr; row-gap: 1.6rem; }
     .details-title { font-size: var(--normal-font-size); }
     .portfolio-popup-close { top: .5rem;  }
 }
 
 @media screen and (max-width: 576px) {
+    /* Nav toggle moves to left, so restore theme toggle to top-right */
     .nav-toggle { right: initial; left: 1.5rem; }
+    .theme-toggle { right: 1.5rem; }
+
+    /* Reduce top padding on all sections for phones */
+    .section { padding: 4.5rem 0 1.5rem; }
+
     .home { background-image: none; height: initial; align-items: initial; padding: 7rem 0 2rem; }
     .home-container { row-gap: 2rem; }
-    .home-img { display: block; width: 250px; justify-self: center; }
+    .home-img { display: block; width: 220px; height: 220px; justify-self: center; }
     .my-info { display: none; }
     .home-social { left: initial; right: -1rem; flex-direction: column; row-gap: 3.5rem; }
     .home-social-follow { font-size: var(--smaller-font-size); transform: rotate(90deg); }
     .home-social-links { flex-direction: column; row-gap: .25rem; }
     .home-social-link { font-size: var(--normal-font-size); }
 
+    .about-img { width: 100%; max-width: 280px; }
     .about-info { grid-template-columns: repeat(3, 1fr); }
     .about-description { padding: 0; }
 
-    .services-modal-content { padding: 4.5rem 1.5rem 2.5rem; }
+    /* Services: single column on phones */
+    .services-container { grid-template-columns: 1fr; }
+    .services-content { padding: 4rem 1.5rem 1.5rem 1.5rem; }
+    .services-modal-content { padding: 4.5rem 1.5rem 2.5rem; width: calc(100vw - 2rem); }
     .services-modal-description { padding: 0; }
 
-    .work-container, .contact-container { grid-template-columns: 300px; }
+    /* Portfolio popup — full-width on phones */
+    .portfolio-popup-inner { width: calc(100vw - 2rem); padding: 2.5rem 1rem 1.5rem; }
+
+    /* Fluid single-column grids */
+    .work-container, .contact-container { grid-template-columns: 1fr; }
 
     .cv-card {
         padding: 1.5rem 1.25rem;
@@ -933,16 +954,17 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
 }
 
 @media screen and (max-width: 350px) {
-    .container { margin-left: var(--mb1); margin-left: var(--mb1); }
-    .home-img { width: 200px; }
+    .container { margin-left: var(--mb1); margin-right: var(--mb1); }
+    .home-img { width: 180px; height: 180px; }
     .home-title { font-size: var(--h1-font-size); }
     .home-subtitle { font-size: var(--normal-font-size); }
     
     .about-info { grid-template-columns: repeat(2, 1fr); row-gap: .5rem; }
     .work-container, .skills-container, .qualification-container, .contact-container { grid-template-columns: 1fr; }
     .skills-title { font-size: var(--normal-font-size); }
-    .work-item { font-size: var(--normal-font-size); }
-    .work-filters { column-gap: .25rem; }
-    .services-container { grid-template-columns: max-content; }
-    .services-content { padding-right: 3.5rem; }
+    .work-item { font-size: var(--smaller-font-size); }
+    .work-filters { column-gap: .25rem; flex-wrap: wrap; row-gap: .5rem; }
+    .services-container { grid-template-columns: 1fr; }
+    .services-content { padding: 3.5rem 1rem 1.25rem 1rem; }
+    .section-title { font-size: var(--h2-font-size); }
 }

@@ -212,3 +212,24 @@ if(navClose) {
         navMenu.classList.remove('show-sidebar');
     })
 }
+
+// Share Button
+const btnShare = document.getElementById('btn-share');
+if (btnShare) {
+    btnShare.addEventListener('click', async () => {
+        const shareData = {
+            title: 'Iddris Rashid Swedi — Software Engineer & Graphic Designer',
+            text: 'Check out my portfolio!',
+            url: window.location.href
+        };
+        if (navigator.share) {
+            try { await navigator.share(shareData); } catch (e) { /* user dismissed */ }
+        } else {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const icon = btnShare.querySelector('i');
+                icon.classList.replace('uil-share-alt', 'uil-check');
+                setTimeout(() => icon.classList.replace('uil-check', 'uil-share-alt'), 2000);
+            });
+        }
+    });
+}
