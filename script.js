@@ -200,18 +200,35 @@ function navHighlighter() {
 const navMenu = document.getElementById('sidebar');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+function openSidebar() {
+    navMenu.classList.add('show-sidebar');
+    if (sidebarOverlay) sidebarOverlay.classList.add('show');
+}
+
+function closeSidebar() {
+    navMenu.classList.remove('show-sidebar');
+    if (sidebarOverlay) sidebarOverlay.classList.remove('show');
+}
 
 if(navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-sidebar');
-    })
+    navToggle.addEventListener('click', openSidebar);
 }
 
 if(navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-sidebar');
-    })
+    navClose.addEventListener('click', closeSidebar);
 }
+
+// Close sidebar when tapping the overlay
+if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', closeSidebar);
+}
+
+// Close sidebar when any nav link is tapped (mobile navigation)
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+});
 
 // Share Button
 const btnShare = document.getElementById('btn-share');
