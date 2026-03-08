@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+
+  <!-- ==================== HEAD ==================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== Primary SEO ===== -->
+    <title>Iddris Rashid Swedi | Software Engineer & Graphic Designer — Nairobi, Kenya</title>
+    <meta name="description" content="Iddris Rashid Swedi is a Software Engineer and Graphic Designer based in Nairobi, Kenya. Specialising in web development, mobile apps, system development, and brand design.">
+    <meta name="keywords" content="Iddris Rashid Swedi, software engineer Kenya, web developer Nairobi, graphic designer Kenya, mobile app developer, React developer, full stack developer, brand identity design, portfolio">
+    <meta name="author" content="Iddris Rashid Swedi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#12141c">
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, WhatsApp previews) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Iddris Rashid Swedi | Software Engineer & Graphic Designer">
+    <meta property="og:description" content="Software Engineer and Graphic Designer based in Nairobi, Kenya — building digital experiences that matter.">
+    <meta property="og:image" content="images/profile.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ===== Twitter / X Card ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iddris Rashid Swedi | Software Engineer & Graphic Designer">
+    <meta name="twitter:description" content="Software Engineer and Graphic Designer based in Nairobi, Kenya — building digital experiences that matter.">
+    <meta name="twitter:image" content="images/profile.png">
+    <meta name="twitter:site" content="@_IddrisRashid">
+    <meta name="twitter:creator" content="@_IddrisRashid">
+
+    <!-- ===== Structured Data — Person Schema ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Iddris Rashid Swedi",
+      "jobTitle": "Software Engineer & Graphic Designer",
+      "url": "https://iydreess.github.io",
+      "image": "images/profile.png",
+      "email": "iddrisiddris100@gmail.com",
+      "telephone": "+254724464248",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/iddris-rashid-swedi/",
+        "https://github.com/Iydreess",
+        "https://x.com/_IddrisRashid",
+        "https://www.instagram.com/_iydreess",
+        "https://www.facebook.com/iydreess.rashid"
+      ],
+      "knowsAbout": ["Web Development", "Mobile App Development", "Graphic Design", "System Development", "React", "Node.js", "Flutter"]
+    }
+    </script>
+
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ==================== BODY ==================== -->
+<body>
+
+    <!-- ==================== NAV TOGGLE ==================== -->
+    <div class="nav-toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+
+    <!-- ==================== THEME TOGGLE ==================== -->
+    <div class="theme-toggle" id="theme-toggle" title="Toggle light / dark mode">
+        <i class="uil uil-sun"></i>
+    </div>
+
+    <!-- ==================== SIDEBAR / NAVIGATION ==================== -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="#" class="nav-logo-text">M</a>
+            </div>
+
+            <div class="nav-menu">
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">Work</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn-share">
+                <i class="uil uil-share-alt social-share"></i>
+            </div>
+
+            <div class="nav-close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="main">
+
+        <!-- ==================== HOME SECTION ==================== -->
+        <section class="home" id="home">
+            <div class="home-container container grid">
+                <div class="home-social">
+                    <span class="home-social-follow">Follow Me</span>
+                    <div class="home-social-links">
+                        <a href="https://www.facebook.com/iydreess.rashid?rdid=w6ftpQyyhKq9xtTK&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16vZWQ6v2P%2F#" target="_blank" class="home-social-link">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/_iydreess?igsh=MWg1Ym5jMmJoNWMzNg==" target="_blank" class="home-social-link">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="https://x.com/_IddrisRashid?t=NfSZDGBGui5hnZhJ4BXlew&s=09" target="_blank" class="home-social-link">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+
+                        <a href="https://github.com/Iydreess" target="_blank" class="home-social-link">
+                            <i class="uil uil-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/iddris-rashid-swedi/" target="_blank" class="home-social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="images/profile.png" alt="Iddris Rashid" class="home-img">
+
+            <div class="home-data">
+                <h1 class="home-title">Hi, I'm Iddris Rashid</h1>
+                <h3 class="home-subtitle">Software Engineer & Graphic Designer</h3>
+                <p class="home-description">Passionate about creating innovative digital solutions and stunning visual experiences. I blend technical expertise with creative design to bring ideas to life.</p>
+                <a href="#about" class="button">
+                    <i class="uil uil-user button-icon"></i>
+                    More About me!
+                </a>
+            </div>
+
+            <div class="my-info">
+                <div class="info-item">
+                    <i class="uil uil-phone info-icon"></i>
+
+                    <div>
+                        <h3 class="info-title">Call</h3>
+                        <span class="info-subtitle">+254 724 464 248</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="uil uil-whatsapp info-icon"></i>
+
+                    <div>
+                        <h3 class="info-title">Whatsapp</h3>
+                        <span class="info-subtitle">+254 724 464 248</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="uil uil-envelope-edit info-icon"></i>
+
+                    <div>
+                        <h3 class="info-title">Email</h3>
+                        <span class="info-subtitle">iddrisiddris100@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about section" id="about">
+            <h2 class="section-title" data-heading="My Intro">About me</h2>
+
+            <div class="about-container container grid">
+                <img src="images/profile.png" alt="Iddris Rashid" class="about-img">
+
+                <div class="about-data">
+                    <h3 class="about-heading">Hi, I'm Iddris Rashid, based in Kenya</h3>
+                    <p class="about-description">I'm a dedicated Software Engineer with a strong foundation in modern web technologies and a creative eye for graphic design. My journey began with a fascination for problem-solving and visual storytelling, which naturally evolved into a career where I can combine both passions.</p>
+
+                    <div class="about-info">
+                        <div class="about-box">
+                            <i class="uil uil-award about-icon"></i>
+                            <h3 class="about-title">Experience</h3>
+                            <span class="about-subtitle">5 + Years</span>
+                        </div>
+
+                        <div class="about-box">
+                            <i class="uil uil-suitcase-alt about-icon"></i>
+                            <h3 class="about-title">Completed</h3>
+                            <span class="about-subtitle">20 + Projects</span>
+                        </div>
+
+                        <div class="about-box">
+                            <i class="uil uil-headphones-alt about-icon"></i>
+                            <h3 class="about-title">Support</h3>
+                            <span class="about-subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="button"><i class="uil uil-navigator button-icon"></i>Contact me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== QUALIFICATIONS SECTION ==================== -->
+        <section class="qualification section">
+            <h2 class="section-title" data-heading="My Journey">Qualifications</h2>
+
+            <div class="qualification-container container grid">
+                <div class="education">
+                    <h3 class="qualification-title"><i class="uil uil-graduation-cap"></i>Education</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Mount Kenya University</h3>
+                            <p class="timeline-text">BSc. Information Technology</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2023 - 2026 (Expected)</span>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Power Learn Project (Scholarship)</h3>
+                            <p class="timeline-text">Software Development</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>July 2025 Cohort</span>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">ALX Africa</h3>
+                            <p class="timeline-text">AI Career Essentials</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Nov 2024</span>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">The Daily Learners & MKU</h3>
+                            <p class="timeline-text">Foundations in Digital Marketing</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Sep 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <h3 class="qualification-title"><i class="uil uil-suitcase"></i>Experience</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">AL-KHAIR FOUNDATION | Nairobi, Kenya</h3>
+                            <p class="timeline-text">Distribution Coordinator</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2024 - 2025</span>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">HULT PRIZE ONCAMPUS | Mount Kenya University</h3>
+                            <p class="timeline-text">Partnership & Collaboration Lead</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2024</span>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">ZINDIGI PRIZE KENYA | Kenya</h3>
+                            <p class="timeline-text">Tech Coordinator</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2023 - 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-download-section">
+                <div class="cv-card">
+                    <h2 class="cv-title">Download My CV</h2>
+                    <p class="cv-description">Get a detailed overview of my professional experience and qualifications.</p>
+                    
+                    <div class="cv-buttons">
+                        <a href="assets/iddrisCV.pdf" download class="cv-button cv-primary">
+                            <i class="uil uil-file-download"></i>
+                            Download PDF
+                        </a>
+                        <a href="assets/iddrisCV.pdf" target="_blank" class="cv-button cv-secondary">
+                            <i class="uil uil-eye"></i>
+                            View Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title" data-heading="My Abilities">My Experience</h2>
+
+            <div class="skills-container container grid">
+                <div class="skills-tabs">
+                    <div class="skills-header skills-active" data-target="#frontend">
+                        <i class="uil uil-brackets-curly skills-icon"></i>
+
+                        <div>
+                            <h1 class="skills-title">Frontend Developer</h1>
+                            <span class="skills-subtitle">More than 4 years</span>
+                            
+                        </div>
+
+                        <i class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+
+                    <div class="skills-header" data-target="#design">
+                        <i class="uil uil-swatchbook skills-icon"></i>
+
+                        <div>
+                            <h1 class="skills-title">Graphics Design</h1>
+                            <span class="skills-subtitle">More than 5 years</span>
+                            
+                        </div>
+
+                        <i class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+
+                    <div class="skills-header" data-target="#backend">
+                        <i class="uil uil-server-network skills-icon"></i>
+
+                        <div>
+                            <h1 class="skills-title">Backend Developer</h1>
+                            <span class="skills-subtitle">More than 2 years</span>
+
+                        </div>
+
+                        <i class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+                </div>
+
+                <div class="skills-content">
+                    <div class="skills-group skills-active" data-content id="frontend">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">HTML5</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">CSS3</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">JavaScript (ES6+)</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">React.js</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Vue.js</h3>
+                                    <span class="skills-number">75%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Tailwind CSS</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Bootstrap</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Responsive Web Design</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-group" data-content id="design">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Canva</h3>
+                                    <span class="skills-number">95%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Figma</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Adobe Photoshop</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Illustrator</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Photopea</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Vectorpea</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skills-group" data-content id="backend">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Node.js</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Express.js</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Python</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Django</h3>
+                                    <span class="skills-number">75%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">PHP</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Laravel</h3>
+                                    <span class="skills-number">75%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">RESTful APIs</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">GraphQL</h3>
+                                    <span class="skills-number">70%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 70%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== WORK / PORTFOLIO SECTION ==================== -->
+        <section class="work section" id="work">
+            <h2 class="section-title" data-heading="My Portfolio">Recent Works</h2>
+
+            <div class="work-filters">
+                <span class="work-item active-work" data-filter="all">All</span>
+                <span class="work-item" data-filter=".web">Websites</span>
+                <span class="work-item" data-filter=".app">Web Apps</span>
+                <span class="work-item" data-filter=".mobile">Mobile</span>
+                <span class="work-item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="work-container container grid">
+
+                <!-- ===== WEBSITES ===== -->
+                <div class="work-card mix web">
+                    <img src="images/ansar.png" alt="Ansar Islamic Organization" class="work-img">
+                    <h3 class="work-title">Ansar Islamic Organization</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Ansar Islamic Organization</h3>
+                        <p class="details-description">Full website for Ansar Islamic Organization — a clean, informative platform serving the community with Islamic resources and announcements.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Website</span></li>
+                            <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://ansarislamic.org/" target="_blank">ansarislamic.org</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix web">
+                    <img src="images/shambatek.png" alt="Shambatek" class="work-img">
+                    <h3 class="work-title">Shambatek</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Shambatek</h3>
+                        <p class="details-description">An agri-tech website bridging the gap between farmers and modern technology solutions for better farm management.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Website</span></li>
+                            <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Iydreess/shambatek" target="_blank">github.com/Iydreess/shambatek</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix web">
+                    <img src="https://i.postimg.cc/QNB1jXYZ/work-3.png" alt="Ameer Creatives" class="work-img">
+                    <h3 class="work-title">Ameer Creatives</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Ameer Creatives</h3>
+                        <p class="details-description">A creative agency website showcasing branding, design, and digital services with a modern and professional aesthetic.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Website</span></li>
+                            <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                            <li>Role - <span>Frontend Developer</span></li>
+                            <li>View - <span><a href="https://ameercreatives.com/" target="_blank">ameercreatives.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ===== WEB APPS ===== -->
+                <div class="work-card mix app">
+                    <img src="images/qiblahomes.png" alt="Qibla Homes Ltd" class="work-img">
+                    <h3 class="work-title">Qibla Homes Ltd</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Qibla Homes Ltd</h3>
+                        <p class="details-description">A real estate web app for Qibla Homes — featuring property listings, enquiry forms, and a clean user experience for home buyers.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Web App</span></li>
+                            <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                            <li>Role - <span>Full Stack Developer</span></li>
+                            <li>View - <span><a href="https://qiblahomesltd.com" target="_blank">qiblahomesltd.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix app">
+                    <img src="images/mafaza.png" alt="Mafaza Organization" class="work-img">
+                    <h3 class="work-title">Mafaza Organization</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Mafaza Organization</h3>
+                        <p class="details-description">A non-profit web platform for Mafaza Organization — supporting community outreach, humanitarian programs, and donor engagement.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Web App</span></li>
+                            <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                            <li>Role - <span>Full Stack Developer</span></li>
+                            <li>View - <span><a href="http://mafazaa.org/" target="_blank">mafazaa.org</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix app">
+                    <img src="https://i.postimg.cc/s2DGqyG8/work-4.png" alt="Smartq" class="work-img">
+                    <h3 class="work-title">Smartq</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Smartq</h3>
+                        <p class="details-description">A smart queue management web app that streamlines service delivery and reduces waiting times for businesses and their customers.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Web App</span></li>
+                            <li>Technologies - <span>HTML, CSS, JavaScript</span></li>
+                            <li>Role - <span>Full Stack Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Iydreess/smartq" target="_blank">github.com/Iydreess/smartq</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix app">
+                    <img src="images/saas.png" alt="Subscription Management Platform" class="work-img">
+                    <h3 class="work-title">Subscription Management</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Subscription Management Platform</h3>
+                        <p class="details-description">A SaaS platform for managing subscriptions, billing cycles, and customer plans — built for scalable software businesses.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Web App / SaaS</span></li>
+                            <li>Technologies - <span>React, Node.js, Vercel</span></li>
+                            <li>Role - <span>Full Stack Developer</span></li>
+                            <li>View - <span><a href="https://saas-subscription-management-bfys.vercel.app/" target="_blank">saas-subscription-management-bfys.vercel.app</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ===== MOBILE APPS ===== -->
+                <div class="work-card mix mobile">
+                    <img src="images/budgetapp.jpg" alt="Budget Up" class="work-img">
+                    <h3 class="work-title">Budget Up</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Budget Up — Mobile Budget App</h3>
+                        <p class="details-description">A personal finance mobile app that helps users track expenses, set budgets, and gain visibility into their spending habits.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Mobile App</span></li>
+                            <li>Technologies - <span>React Native / Flutter</span></li>
+                            <li>Role - <span>Mobile Developer</span></li>
+                            <li>View - <span><a href="https://github.com/Iydreess/BudgetApp" target="_blank">github.com/Iydreess/BudgetApp</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix mobile">
+                    <img src="images/mafaza-app.jpg" alt="Mafaza Organization App" class="work-img">
+                    <h3 class="work-title">Mafaza Organization App</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Mafaza Organization — Mobile App</h3>
+                        <p class="details-description">The mobile companion app for Mafaza Organization, bringing community programs and humanitarian services to users on the go.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Mobile App</span></li>
+                            <li>Technologies - <span>React Native / Flutter</span></li>
+                            <li>Role - <span>Mobile Developer</span></li>
+                            <li>View - <span>Coming Soon</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ===== GRAPHIC DESIGN ===== -->
+                <div class="work-card mix design">
+                    <img src="images/design-1.jpg" alt="Brand Identity Design" class="work-img">
+                    <h3 class="work-title">Brand Identity Design</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Brand Identity Design</h3>
+                        <p class="details-description">Complete brand identity package including logo, colour palette, typography, and usage guidelines for a client brand.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Graphic Design</span></li>
+                            <li>Tools - <span>Canva, Figma, Illustrator</span></li>
+                            <li>Role - <span>Graphic Designer</span></li>
+                            <li>View - <span>Available on request</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix design">
+                    <img src="images/design-2.jpg" alt="Social Media Graphics" class="work-img">
+                    <h3 class="work-title">Social Media Graphics</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Social Media Graphics</h3>
+                        <p class="details-description">A series of cohesive social media visuals — posts, stories, and banners — crafted for maximum engagement and brand consistency.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Graphic Design</span></li>
+                            <li>Tools - <span>Canva, Photopea</span></li>
+                            <li>Role - <span>Graphic Designer</span></li>
+                            <li>View - <span>Available on request</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix design">
+                    <img src="images/design-3.jpg" alt="Poster & Flyer Design" class="work-img">
+                    <h3 class="work-title">Poster & Flyer Design</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Poster & Flyer Design</h3>
+                        <p class="details-description">Eye-catching event posters and promotional flyers designed for organisations and community events across Kenya.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Graphic Design</span></li>
+                            <li>Tools - <span>Canva, Adobe Photoshop</span></li>
+                            <li>Role - <span>Graphic Designer</span></li>
+                            <li>View - <span>Available on request</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-card mix design">
+                    <img src="images/design-4.jpg" alt="Logo Design" class="work-img">
+                    <h3 class="work-title">Logo Design</h3>
+                    <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
+
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Logo Design</h3>
+                        <p class="details-description">Custom logo concepts created for startups and small businesses — minimal, memorable, and scalable across all media.</p>
+                        <ul class="details-info">
+                            <li>Category - <span>Graphic Design</span></li>
+                            <li>Tools - <span>Figma, Vectorpea, Illustrator</span></li>
+                            <li>Role - <span>Graphic Designer</span></li>
+                            <li>View - <span>Available on request</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== PORTFOLIO POPUP ==================== -->
+        <div class="portfolio-popup">
+            <div class="portfolio-popup-inner">
+                <div class="portfolio-popup-content grid">
+                    <span class="portfolio-popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp-thumbnail">
+                        <img src="https://i.postimg.cc/sXLjnC5p/work-2.png" alt="" class="portfolio-popup-img">
+                    </div>
+
+                    <div class="portfolio-popup-info">
+                        <div class="portfolio-popup-subtitle">Featured - <span>Design</span></div>
+                        <div class="portfolio-popup-body">
+                            <h3 class="details-title">App for Technology & Services</h3>
+                            <p class="details-description">A stylish burger restaurant mobile app interface displayed on two smartphones</p>
+
+                            <ul class="details-info">
+                                <li>Created - <span>15 Apr 2025</span></li>
+                                <li>Technologies - <span>html css</span></li>
+                                <li>Role - <span>frontend</span></li>
+                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SERVICES SECTION ==================== -->
+        <section class="services section" id="services">
+            <h2 class="section-title" data-heading="Services">What I Offer</h2>
+
+            <div class="services-container container grid">
+
+                <!-- Web Development & Maintenance -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-web-grid services-icon"></i>
+                        <h3 class="services-title">Web Dev & <br> Maintenance</h3>
+                    </div>
+
+                    <span class="services-button">
+                        View More <i class="uil uil-arrow-right services-button-icon"></i>
+                    </span>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-swatchbook services-icon"></i>
+                        <h3 class="services-title">Graphic <br> Design</h3>
+                    </div>
+
+                    <span class="services-button">
+                        View More <i class="uil uil-arrow-right services-button-icon"></i>
+                    </span>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-mobile-android services-icon"></i>
+                        <h3 class="services-title">Mobile App <br> Development</h3>
+                    </div>
+
+                    <span class="services-button">
+                        View More <i class="uil uil-arrow-right services-button-icon"></i>
+                    </span>
+                </div>
+
+                <!-- System Development -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-server-network services-icon"></i>
+                        <h3 class="services-title">System <br> Development</h3>
+                    </div>
+
+                    <span class="services-button">
+                        View More <i class="uil uil-arrow-right services-button-icon"></i>
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- ===== SERVICE MODALS (outside cards to avoid overflow:hidden/transform clipping) ===== -->
+
+            <!-- Modal 0 - Web Development & Maintenance -->
+            <div class="services-modal">
+                <div class="services-modal-content">
+                    <i class="uil uil-times services-modal-close"></i>
+
+                    <h3 class="services-modal-title">Web Development & Maintenance</h3>
+                    <p class="services-modal-description">I build and maintain modern, responsive websites with more than 3 years of experience delivering quality work to clients and organisations.</p>
+
+                    <ul class="services-modal-services grid">
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Custom Website Development</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Responsive & Mobile-Friendly Design</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Website Updates & Bug Fixes</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Performance Optimisation</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Ongoing Site Management & Support</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 1 - Graphic Design -->
+            <div class="services-modal">
+                <div class="services-modal-content">
+                    <i class="uil uil-times services-modal-close"></i>
+
+                    <h3 class="services-modal-title">Graphic Design</h3>
+                    <p class="services-modal-description">I create compelling visual content with more than 5 years of experience helping brands communicate their identity effectively.</p>
+
+                    <ul class="services-modal-services grid">
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Logo & Brand Identity Design</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Social Media Graphics & Banners</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Poster & Flyer Design</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Brand Style Guides & Colour Palettes</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Print & Digital Marketing Materials</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 2 - Mobile App Development -->
+            <div class="services-modal">
+                <div class="services-modal-content">
+                    <i class="uil uil-times services-modal-close"></i>
+
+                    <h3 class="services-modal-title">Mobile App Development</h3>
+                    <p class="services-modal-description">I develop cross-platform mobile applications that are fast, intuitive, and built to scale — from concept to deployment.</p>
+
+                    <ul class="services-modal-services grid">
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Cross-Platform App Development (React Native / Flutter)</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">UI Design & Prototyping</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">API Integration</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">App Testing & Debugging</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">App Store Deployment & Support</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal 3 - System Development -->
+            <div class="services-modal">
+                <div class="services-modal-content">
+                    <i class="uil uil-times services-modal-close"></i>
+
+                    <h3 class="services-modal-title">System Development</h3>
+                    <p class="services-modal-description">I design and build robust backend systems and web applications that power real-world business operations reliably and efficiently.</p>
+
+                    <ul class="services-modal-services grid">
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Backend Development (Node.js, PHP, Python)</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Database Design & Management</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">RESTful API Development</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">Admin Dashboards & Management Systems</p>
+                        </li>
+
+                        <li class="services-modal-service">
+                            <i class="uil uil-check-circle services-modal-icon"></i>
+                            <p class="services-modal-info">System Integration & Deployment</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==================== TESTIMONIALS SECTION ==================== -->
+        <section class="testimonials section">
+            <h2 class="section-title" data-heading="My clients say">Testimonials</h2>
+
+            <div class="testimonials-container container swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Testimonial 1 - Yusuf Ameer -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial-description">Iddris delivered exactly what we envisioned for Ameer Creatives — and then some. The website perfectly reflects our brand's identity, looks stunning on every device, and has noticeably increased client enquiries since launch. His attention to detail and creative input made all the difference.</p>
+                        <h3 class="testimonial-date">February 10, 2026</h3>
+                        <div class="testimonial-profile">
+                            <img src="images/yusuf-ameer.png" alt="Yusuf Ameer" class="testimonial-profile-img">
+
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Yusuf Ameer</span>
+                                <span class="testimonail-profile-detail">Founder, Ameer Creatives</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 - Mohammad Shaaban -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial-description">We needed a platform that truly represented Ansar Islamic Organization's mission and values, and Iddris built just that. The site is clean, professional, and easy for our community to navigate. He was communicative throughout and delivered on time. We are very pleased with the result.</p>
+                        <h3 class="testimonial-date">November 14, 2025</h3>
+                        <div class="testimonial-profile">
+                            <img src="images/mohammad-shaaban.jpeg" alt="Mohammad Shaaban" class="testimonial-profile-img">
+
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Mohammad Shaaban</span>
+                                <span class="testimonail-profile-detail">Director, Ansar Islamic Organization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 - Sudi Yawa -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial-description">Working with Iddris was a smooth and professional experience from start to finish. He understood my requirements quickly, communicated clearly, and produced high-quality work within the agreed timeframe. I particularly appreciated how he combined his technical skills with a strong design sense — a rare combination.</p>
+                        <h3 class="testimonial-date">September 3, 2025</h3>
+                        <div class="testimonial-profile">
+                            <img src="images/sudi-yawa.jpeg" alt="Sudi Yawa" class="testimonial-profile-img">
+
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Sudi Yawa</span>
+                                <span class="testimonail-profile-detail">Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 - Faraji Bajber -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial-description">Iddris is one of the most reliable and talented developers I have worked with. He brings both technical depth and creative flair to every project. The graphic design work he did for us was outstanding — our brand visuals have never looked better. I would recommend him without any hesitation.</p>
+                        <h3 class="testimonial-date">July 22, 2025</h3>
+                        <div class="testimonial-profile">
+                            <img src="images/faraji-bajber.png" alt="Faraji Bajber" class="testimonial-profile-img">
+
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Faraji Bajber</span>
+                                <span class="testimonail-profile-detail">Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 - Sucdii Abdisalan -->
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial-description">Having collaborated with Iddris on several projects over the years, I can confidently say he is one of the most well-rounded developers I know. His backend instincts are sharp, his code is clean, and he communicates like a true professional. Working alongside him is always productive — he raises the standard of every team he is part of.</p>
+                        <h3 class="testimonial-date">March 1, 2026</h3>
+                        <div class="testimonial-profile">
+                            <img src="images/sucdii-abdisalan.jpeg" alt="Sucdii Abdisalan" class="testimonial-profile-img">
+
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Sucdii Abdisalan</span>
+                                <span class="testimonail-profile-detail">Backend Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </section>
+
+        <!-- ==================== CLIENTS SECTION ==================== -->
+        <section class="clients section">
+            <h2 class="section-title" data-heading="Trusted By">Clients</h2>
+
+            <div class="clients-container">
+                <p class="clients-subtitle">Brands & organisations I've had the pleasure of working with</p>
+
+                <div class="clients-marquee-wrapper">
+                    <div class="clients-marquee">
+
+                        <!-- Original set -->
+                        <div class="client-card">
+                            <img src="images/logo/ansar-logo.jpeg" alt="Ansar Islamic Organization" class="client-logo">
+                            <span class="client-name">Ansar Islamic Org</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/qibla-logo.jpeg" alt="Qibla Homes Ltd" class="client-logo">
+                            <span class="client-name">Qibla Homes Ltd</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/mafaza-logo.jpeg" alt="Mafaza Organization" class="client-logo">
+                            <span class="client-name">Mafaza Organization</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/shambatek-logo.jpeg" alt="Shambatek" class="client-logo">
+                            <span class="client-name">Shambatek</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/ameercreatives-logo.jpeg" alt="Ameer Creatives" class="client-logo">
+                            <span class="client-name">Ameer Creatives</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/Smartq.png" alt="Smartq" class="client-logo">
+                            <span class="client-name">Smartq</span>
+                        </div>
+
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="client-card">
+                            <img src="images/logo/ansar-logo.jpeg" alt="Ansar Islamic Organization" class="client-logo">
+                            <span class="client-name">Ansar Islamic Org</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/qibla-logo.jpeg" alt="Qibla Homes Ltd" class="client-logo">
+                            <span class="client-name">Qibla Homes Ltd</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/mafaza-logo.jpeg" alt="Mafaza Organization" class="client-logo">
+                            <span class="client-name">Mafaza Organization</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/shambatek-logo.jpeg" alt="Shambatek" class="client-logo">
+                            <span class="client-name">Shambatek</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/ameercreatives-logo.jpeg" alt="Ameer Creatives" class="client-logo">
+                            <span class="client-name">Ameer Creatives</span>
+                        </div>
+                        <div class="client-card">
+                            <img src="images/logo/Smartq.png" alt="Smartq" class="client-logo">
+                            <span class="client-name">Smartq</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title" data-heading="Get in Touch">Contact me</h2>
+
+            <div class="contact-container container grid">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="uil uil-envelope-edit contact-card-icon"></i>
+                            <h3 class="contact-card-title">Email</h3>
+                            <span class="contact-card-data">iddrisiddris100@gmail.com</span>
+                            <a href="mailto:iddrisiddris100@gmail.com" class="contact-button">Write me <i class="uil uil-arrow-right contact-button-icon"></i></a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="uil uil-whatsapp contact-card-icon"></i>
+                            <h3 class="contact-card-title">Whatsapp</h3>
+                            <span class="contact-card-data">+254 724 464 248</span>
+                            <a href="https://wa.me/254724464248" target="_blank" rel="noopener noreferrer" class="contact-button">Write me <i class="uil uil-arrow-right contact-button-icon"></i></a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="uil uil-phone contact-card-icon"></i>
+                            <h3 class="contact-card-title">Call</h3>
+                            <span class="contact-card-data">+254 724 464 248</span>
+                            <a href="tel:+254724464248" class="contact-button">Call me <i class="uil uil-arrow-right contact-button-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-content">
+                    <form action="" class="contact-form">
+                        <div class="input-container">
+                            <input type="text" class="input">
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="tel" class="input">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+    
+                        <div class="input-container textarea">
+                            <textarea name="" id="" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+    
+                        <button type="submit" class="button"><i class="uil uil-navigator button-icon"></i>Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div class="footer-container container grid">
+                    <div class="footer-info">
+                        <h1 class="footer-title">Iddris Rashid Swedi</h1>
+                        <span class="footer-subtitle">Software Engineer & Graphic Designer</span>
+                        <p class="footer-description">Building digital experiences that matter.</p>
+                    </div>
+
+                    <div class="footer-quick-links">
+                        <h3 class="footer-section-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#home" class="footer-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="footer-link">About</a>
+                            </li>
+                            <li>
+                                <a href="#work" class="footer-link">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social-section">
+                        <h3 class="footer-section-title">Follow Me</h3>
+                        <div class="footer-socials">
+                            <a href="https://www.linkedin.com/in/iddris-rashid-swedi/" target="_blank" class="footer-social">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+
+                            <a href="https://github.com/Iydreess" target="_blank" class="footer-social">
+                                <i class="uil uil-github"></i>
+                            </a>
+
+                            <a href="https://x.com/_IddrisRashid?t=NfSZDGBGui5hnZhJ4BXlew&s=09" target="_blank" class="footer-social">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/_iydreess?igsh=MWg1Ym5jMmJoNWMzNg==" target="_blank" class="footer-social">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/iydreess.rashid?rdid=w6ftpQyyhKq9xtTK&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16vZWQ6v2P%2F#" target="_blank" class="footer-social">
+                                <i class="uil uil-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="footer-copy">&#169; 2026 Iddris Rashid Swedi. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
