@@ -1,0 +1,6 @@
+Contact: mailto:iddrisiddris100@gmail.com
+Contact: https://iddrisrashid.tech/#contact
+Expires: 2027-03-16T23:59:59Z
+Preferred-Languages: en
+Canonical: https://iddrisrashid.tech/.well-known/security.txt
+Policy: https://iddrisrashid.tech/#contact

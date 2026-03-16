@@ -6,6 +6,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script>
+            (function () {
+                var canonicalHost = "iddrisrashid.tech";
+                var hostname = window.location.hostname;
+                var isLocalHost = hostname === "localhost" || hostname === "127.0.0.1";
+
+                if (isLocalHost) {
+                    return;
+                }
+
+                var mustUseHttps = window.location.protocol !== "https:";
+                var hostNeedsRedirect = hostname !== canonicalHost;
+
+                if (mustUseHttps || hostNeedsRedirect) {
+                    var target = "https://" + canonicalHost + window.location.pathname + window.location.search + window.location.hash;
+                    if (window.location.href !== target) {
+                        window.location.replace(target);
+                    }
+                }
+            })();
+        </script>
+
         <!-- ===== Primary SEO ===== -->
         <title>Iddris Rashid Swedi | Software Engineer and Graphic Designer - Nairobi, Kenya</title>
         <meta name="description" content="Iddris Rashid Swedi is a Software Engineer and Graphic Designer based in Nairobi, Kenya, specializing in web development, mobile apps, system development, and brand design.">
@@ -13,18 +35,22 @@
         <meta name="author" content="Iddris Rashid Swedi">
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="format-detection" content="telephone=no">
         <meta name="theme-color" content="#12141c">
         <meta name="referrer" content="strict-origin-when-cross-origin">
 
-        <link rel="canonical" href="https://iydreess.github.io/">
+        <link rel="canonical" href="https://iddrisrashid.tech/">
+        <link rel="alternate" href="https://iddrisrashid.tech/" hreflang="en">
+        <link rel="alternate" href="https://iddrisrashid.tech/" hreflang="x-default">
 
         <!-- ===== Open Graph (Facebook, LinkedIn, WhatsApp previews) ===== -->
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Iddris Rashid Swedi Portfolio">
         <meta property="og:title" content="Iddris Rashid Swedi | Software Engineer and Graphic Designer">
         <meta property="og:description" content="Software Engineer and Graphic Designer based in Nairobi, Kenya, building digital experiences that matter.">
-        <meta property="og:url" content="https://iydreess.github.io/">
-        <meta property="og:image" content="https://iydreess.github.io/images/profile.png">
+        <meta property="og:url" content="https://iddrisrashid.tech/">
+        <meta property="og:image" content="https://iddrisrashid.tech/images/profile.png">
+        <meta property="og:image:type" content="image/png">
         <meta property="og:image:alt" content="Portrait of Iddris Rashid Swedi">
         <meta property="og:locale" content="en_US">
 
@@ -32,7 +58,8 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Iddris Rashid Swedi | Software Engineer and Graphic Designer">
         <meta name="twitter:description" content="Software Engineer and Graphic Designer based in Nairobi, Kenya, building digital experiences that matter.">
-        <meta name="twitter:image" content="https://iydreess.github.io/images/profile.png">
+        <meta name="twitter:url" content="https://iddrisrashid.tech/">
+        <meta name="twitter:image" content="https://iddrisrashid.tech/images/profile.png">
         <meta name="twitter:image:alt" content="Portrait of Iddris Rashid Swedi">
         <meta name="twitter:site" content="@_IddrisRashid">
         <meta name="twitter:creator" content="@_IddrisRashid">
@@ -44,19 +71,32 @@
             "@graph": [
                 {
                     "@type": "WebSite",
-                    "@id": "https://iydreess.github.io/#website",
-                    "url": "https://iydreess.github.io/",
+                    "@id": "https://iddrisrashid.tech/#website",
+                    "url": "https://iddrisrashid.tech/",
                     "name": "Iddris Rashid Swedi Portfolio",
                     "inLanguage": "en",
                     "description": "Portfolio of Iddris Rashid Swedi, Software Engineer and Graphic Designer in Nairobi, Kenya."
                 },
                 {
+                    "@type": "WebPage",
+                    "@id": "https://iddrisrashid.tech/#webpage",
+                    "url": "https://iddrisrashid.tech/",
+                    "name": "Iddris Rashid Swedi | Software Engineer and Graphic Designer",
+                    "isPartOf": {
+                        "@id": "https://iddrisrashid.tech/#website"
+                    },
+                    "about": {
+                        "@id": "https://iddrisrashid.tech/#person"
+                    },
+                    "inLanguage": "en"
+                },
+                {
                     "@type": "Person",
-                    "@id": "https://iydreess.github.io/#person",
+                    "@id": "https://iddrisrashid.tech/#person",
                     "name": "Iddris Rashid Swedi",
                     "jobTitle": "Software Engineer and Graphic Designer",
-                    "url": "https://iydreess.github.io/",
-                    "image": "https://iydreess.github.io/images/profile.png",
+                    "url": "https://iddrisrashid.tech/",
+                    "image": "https://iddrisrashid.tech/images/profile.png",
                     "email": "iddrisiddris100@gmail.com",
                     "telephone": "+254724464248",
                     "address": {
@@ -85,7 +125,18 @@
         }
         </script>
 
-        <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+        <link rel="manifest" href="/manifest.json">
+
+        <meta name="application-name" content="Iddris Rashid Portfolio">
+        <meta name="apple-mobile-web-app-title" content="Iddris Portfolio">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">

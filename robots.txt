@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location for all compliant search engines.
+Sitemap: https://iddrisrashid.tech/sitemap.xml
+
+# Optional host directive used by some crawlers.
+Host: iddrisrashid.tech

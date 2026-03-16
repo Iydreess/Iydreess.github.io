@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "Iddris Rashid Swedi Portfolio",
+  "short_name": "Iddris Portfolio",
+  "description": "Portfolio website of Iddris Rashid Swedi, Software Engineer and Graphic Designer based in Nairobi, Kenya.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#12141c",
+  "theme_color": "#12141c",
+  "categories": ["portfolio", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
