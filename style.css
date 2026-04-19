@@ -996,9 +996,9 @@ body.light-mode .contact-map { border-color: hsl(220, 12%, 82%); }
 }
 
 @media screen and (max-width: 576px) {
-    /* Nav toggle moves to left, so restore theme toggle to top-right */
-    .nav-toggle { right: initial; left: 1.5rem; }
-    .theme-toggle { right: 1.5rem; }
+    /* Keep nav toggle on the right on phones and offset theme toggle to avoid overlap */
+    .nav-toggle { left: initial; right: 1.5rem; }
+    .theme-toggle { right: 4.5rem; }
 
     /* Reduce top padding on all sections for phones */
     .section { padding: 4.5rem 0 1.5rem; }
