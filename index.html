@@ -125,11 +125,9 @@
         }
         </script>
 
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/images/favicon.jpeg" type="image/jpeg">
+        <link rel="shortcut icon" href="/images/favicon.jpeg" type="image/jpeg">
+        <link rel="apple-touch-icon" href="/images/favicon.jpeg">
         <link rel="manifest" href="/manifest.json">
 
         <meta name="application-name" content="Iddris Rashid Portfolio">
@@ -758,7 +756,7 @@
                 </div>
 
                 <div class="work-card mix web">
-                    <img src="https://i.postimg.cc/QNB1jXYZ/work-3.png" alt="Ameer Creatives" class="work-img">
+                    <img src="images/ameer-creatives.png" alt="Ameer Creatives" class="work-img">
                     <h3 class="work-title">Ameer Creatives</h3>
                     <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
 
@@ -880,7 +878,7 @@
 
                 <!-- ===== GRAPHIC DESIGN ===== -->
                 <div class="work-card mix design">
-                    <img src="images/design-1.jpg" alt="Brand Identity Design" class="work-img">
+                    <img src="images/brand-design.jpg" alt="Brand Identity Design" class="work-img">
                     <h3 class="work-title">Brand Identity Design</h3>
                     <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
 
@@ -897,7 +895,7 @@
                 </div>
 
                 <div class="work-card mix design">
-                    <img src="images/design-2.jpg" alt="Social Media Graphics" class="work-img">
+                    <img src="images/social-media.png" alt="Social Media Graphics" class="work-img">
                     <h3 class="work-title">Social Media Graphics</h3>
                     <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
 
@@ -914,7 +912,7 @@
                 </div>
 
                 <div class="work-card mix design">
-                    <img src="images/design-3.jpg" alt="Poster & Flyer Design" class="work-img">
+                    <img src="images/poster-flyer.png" alt="Poster & Flyer Design" class="work-img">
                     <h3 class="work-title">Poster & Flyer Design</h3>
                     <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
 
@@ -931,7 +929,7 @@
                 </div>
 
                 <div class="work-card mix design">
-                    <img src="images/design-4.jpg" alt="Logo Design" class="work-img">
+                    <img src="images/logo-design.png" alt="Logo Design" class="work-img">
                     <h3 class="work-title">Logo Design</h3>
                     <span class="work-button">View <i class="uil uil-arrow-right work-button-icon"></i></span>
 
@@ -1381,15 +1379,20 @@
                 </div>
 
                 <div class="contact-content">
-                    <form action="" class="contact-form" autocomplete="on">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form" autocomplete="on">
+                        <input type="hidden" id="contact-access-key" name="access_key" value="9d69de7c-acfb-448d-824b-4df60c6f7e80">
+                        <input type="hidden" name="subject" value="New contact form submission from iddrisrashid.tech">
+                        <input type="hidden" name="from_name" value="Iddris Portfolio Contact Form">
+                        <input type="checkbox" name="botcheck" class="hidden-botcheck" tabindex="-1" autocomplete="off" style="display:none;">
+
                         <div class="input-container">
-                            <input type="text" id="contact-name" name="name" class="input" autocomplete="name">
+                            <input type="text" id="contact-name" name="name" class="input" autocomplete="name" required>
                             <label for="contact-name">Name</label>
                             <span>Name</span>
                         </div>
     
                         <div class="input-container">
-                            <input type="email" id="contact-email" name="email" class="input" autocomplete="email">
+                            <input type="email" id="contact-email" name="email" class="input" autocomplete="email" required>
                             <label for="contact-email">Email</label>
                             <span>Email</span>
                         </div>
@@ -1401,12 +1404,13 @@
                         </div>
     
                         <div class="input-container textarea">
-                            <textarea id="contact-message" name="message" class="input"></textarea>
+                            <textarea id="contact-message" name="message" class="input" required></textarea>
                             <label for="contact-message">Message</label>
                             <span>Message</span>
                         </div>
     
-                        <button type="submit" class="button"><i class="uil uil-navigator button-icon"></i>Send Message</button>
+                        <button type="submit" class="button" id="contact-submit"><i class="uil uil-navigator button-icon"></i>Send Message</button>
+                        <p class="contact-status" id="contact-status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>

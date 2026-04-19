@@ -384,6 +384,8 @@ button { cursor: pointer; }
     border-radius: .5rem;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
     transition: transform .35s cubic-bezier(.25,.8,.25,1), box-shadow .35s cubic-bezier(.25,.8,.25,1);
     cursor: pointer;
 }
@@ -413,6 +415,9 @@ button { cursor: pointer; }
     margin-bottom: var(--mb1);
     display: block;
     width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
     transition: transform .4s ease;
     transform-origin: center;
 }
@@ -430,6 +435,7 @@ button { cursor: pointer; }
 .work-card:hover .work-title { color: var(--skin-color); }
 
 .work-button { color: var(--skin-color); font-size: var(--small-font-size); display: flex; align-items: center; column-gap: .25rem; cursor: pointer; }
+.work-card .work-button { margin-top: auto; }
 .work-button-icon { font-size: 1rem; transition: .4s; }
     .work-button:hover .work-button-icon { transform: translateX(.25rem); }
 .active-work { background-color: var(--skin-color); color: var(--title-color); }
@@ -700,6 +706,21 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
             .input-container span::after { right: 50%; }
             .input-container.focus label { top: 0; transform: translateY(-50%); left: 25px; font-size: var(--smaller-font-size); }
                 .input-container.focus span::before, .input-container.focus span::after  { width: 50%; opacity: 1; }
+
+.contact-status {
+    min-height: 1.4rem;
+    margin-top: .9rem;
+    font-size: var(--small-font-size);
+}
+
+.contact-status-loading { color: var(--text-color); }
+.contact-status-success { color: #2fc76f; }
+.contact-status-error { color: #ff6b6b; }
+
+#contact-submit:disabled {
+    opacity: .75;
+    cursor: not-allowed;
+}
 
 /* ===== WhatsApp Float Button ===== */
 .wa-float {

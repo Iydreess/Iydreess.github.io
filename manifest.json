@@ -13,14 +13,14 @@
   "categories": ["portfolio", "business", "productivity"],
   "icons": [
     {
-      "src": "/favicon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/images/favicon.jpeg",
+      "sizes": "any",
+      "type": "image/jpeg"
     },
     {
-      "src": "/favicon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/images/favicon.jpeg",
+      "sizes": "any",
+      "type": "image/jpeg"
     }
   ]
 }

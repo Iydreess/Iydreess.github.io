@@ -250,3 +250,81 @@ if (btnShare) {
         }
     });
 }
+
+// Contact Form (Web3Forms)
+const contactForm = document.getElementById('contact-form');
+const contactStatus = document.getElementById('contact-status');
+const contactSubmit = document.getElementById('contact-submit');
+const contactAccessKey = document.getElementById('contact-access-key');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (contactStatus) {
+            contactStatus.textContent = 'Sending your message...';
+            contactStatus.className = 'contact-status contact-status-loading';
+        }
+
+        if (contactSubmit) {
+            contactSubmit.disabled = true;
+            contactSubmit.setAttribute('aria-busy', 'true');
+        }
+
+        const formData = new FormData(contactForm);
+        const rawAccessKey = contactAccessKey ? contactAccessKey.value : '';
+        const accessKey = rawAccessKey.trim();
+        const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
+        if (!uuidPattern.test(accessKey)) {
+            if (contactStatus) {
+                contactStatus.textContent = 'Access key format is invalid. Paste the exact Web3Forms UUID key and try again.';
+                contactStatus.className = 'contact-status contact-status-error';
+            }
+            if (contactSubmit) {
+                contactSubmit.disabled = false;
+                contactSubmit.removeAttribute('aria-busy');
+            }
+            return;
+        }
+
+        // Normalize key to avoid hidden whitespace issues from copy/paste.
+        formData.set('access_key', accessKey);
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    Accept: 'application/json'
+                }
+            });
+
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || 'Form submission failed.');
+            }
+
+            if (contactStatus) {
+                contactStatus.textContent = 'Message sent successfully. I will get back to you soon.';
+                contactStatus.className = 'contact-status contact-status-success';
+            }
+
+            contactForm.reset();
+            document.querySelectorAll('.input-container').forEach((container) => {
+                container.classList.remove('focus');
+            });
+        } catch (error) {
+            if (contactStatus) {
+                contactStatus.textContent = error.message || 'Something went wrong while sending your message.';
+                contactStatus.className = 'contact-status contact-status-error';
+            }
+        } finally {
+            if (contactSubmit) {
+                contactSubmit.disabled = false;
+                contactSubmit.removeAttribute('aria-busy');
+            }
+        }
+    });
+}
