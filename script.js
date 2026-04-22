@@ -235,7 +235,7 @@ const btnShare = document.getElementById('btn-share');
 if (btnShare) {
     btnShare.addEventListener('click', async () => {
         const shareData = {
-            title: 'Iddris Rashid Swedi — Software Engineer & Graphic Designer',
+            title: 'Iddris Rashid Swedi — Software Engineer & Digital Strategist',
             text: 'Check out my portfolio!',
             url: window.location.href
         };
